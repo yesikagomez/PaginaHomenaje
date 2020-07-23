@@ -7,5 +7,22 @@ header {
 }
 header h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 40%;
+    text-align:center ;
+}
+
+.foto {
+    background: #B185A7;
+    padding: 10px;
+}
+
+.foto img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    left: 38%;
+    border-color: #FFF4E9;
+    border-width: 10px;
+    border-style: solid;
+    position: relative;
+    width: 25%;
+    height: 10%;
 }
