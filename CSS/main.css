@@ -2,27 +2,45 @@ body {
     background: #E8DBC5;
 }
 
-header {
-    background: #C3A29E;
-}
-header h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align:center ;
-}
+#pagina {
+    display: grid;
+    grid-template-areas: "cabecera cabecera"
+                          "foto menu"
+                           "pie pie";
+    column-gap: 20px;
+    row-gap: 10px;
+    grid-template-rows: 90px 650px 1fr;
+    grid-template-columns: 400px 1fr;
 
-.foto {
-    background: #B185A7;
-    padding: 10px;
 }
 
 .foto img {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    left: 38%;
     border-color: #FFF4E9;
     border-width: 10px;
     border-style: solid;
     position: relative;
-    width: 25%;
-    height: 10%;
+}
+header {
+    background: #C3A29E;
+    grid-area: cabecera;
+}
+
+nav {
+    background-color: #B185A7;
+    grid-area: menu;
+}
+
+aside {
+    grid-area: foto;
+}
+
+footer {
+    background-color: #FFF4E9;
+    grid-area: pie;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center ;
 }
