@@ -1,7 +1,6 @@
 body {
     background: #E8DBC5;
 }
-
 #pagina {
     display: grid;
     grid-template-areas: "cabecera cabecera"
@@ -9,49 +8,80 @@ body {
                            "pie pie";
     column-gap: 20px;
     row-gap: 10px;
-    grid-template-rows: 90px 650px 1fr;
-    grid-template-columns: 400px 1fr;
-
+    grid-template-rows: 90px 85% 1fr;
+    grid-template-columns: 500px 1fr;
 }
-
 .foto img {
     border-color: #FFF4E9;
     border-width: 10px;
     border-style: solid;
     position: relative;
+    width: 95%;
+    margin-top: 20%;
 }
 header {
     background: #C3A29E;
     grid-area: cabecera;
 }
-
-#informacion img {
-    border-radius: 80px;
-    border-color: #FFF4E9;
-    border-width: 5px;
-    border-style: solid;
-    position: relative;
-    width:20%;
-    height: 200px;
-    margin-left: 150px;
-}
-#fecha1 {
-    margin-left: 180px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 14px;
-} 
-#informacion p{
-    text-align: center;
-}
 #info {
     background-color: #B185A7;
     grid-area: menu;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-
-aside {
-    grid-area: foto;
+#informacion #primer_dia img {
+    border-radius: 80px;
+    margin: 10%;
+    height: 200px;
+    width: 200px;
 }
+#informacion #primer_dia p{
+    text-align: center;
+    font-size: large;
+    margin-top: 10% ;
+    margin-right: 35%;
+    font-size: 25px;
 
+}
+#primera_palabra #primera_palabra_info img {
+    border-radius: 80px;
+    margin: 10%;
+    height: 200px;
+    width: 200px;
+}
+#primera_palabra #primera_palabra_info p{
+    text-align: center;
+    font-size: large;
+    margin-top: 10% ;
+    margin-right: 35%;
+    font-size: 25px;
+}
+#bautizo #bautizo_info img {
+    border-radius: 80px;
+    margin: 10%;
+    height: 200px;
+    width: 200px;
+}
+#bautizo #bautizo_info p{
+    text-align: center;
+    font-size: large;
+    margin-top: 10% ;
+    margin-right: 35%;
+    font-size: 25px;
+}
+#primer_anno #primer_anno_info img {
+    border-radius: 80px;
+    margin: 10%;
+    height: 200px;
+    width: 200px;
+}
+#primer_anno #primer_anno_info p{
+    text-align: center;
+    font-size: large;
+    margin-top: 10% ;
+    margin-right: 35%;
+    font-size: 25px;
+}
 footer {
     background-color: #FFF4E9;
     grid-area: pie;
