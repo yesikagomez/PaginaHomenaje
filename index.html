@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/main.css" />
     <title>Pagina Homenaje</title>
 </head>
@@ -14,30 +15,42 @@
     </div>
    </header> 
    <main id="info">
-        <section id="informacion">
-            <article id="primer_dia">
-                <img src="./Imagenes/Mariangel1.jpg" title="Naciemiento"/>
-                <p>Nacío el 10 de Abril del 2019 a las 9:53</p>
-            </article>
-        </section>
-        <section id="primera_palabra">
-            <article id="primera_palabra_info">
-                <img src="./Imagenes/Mariangel2.jpg" title="Primera Palabra"/>
-                <p>El 13 de Octubre del 2019 dijo su primera palabra. Mamá</p>
-            </article>
-        </section>
-        <section id="bautizo">
-            <article id="bautizo_info">
-                <img src="./Imagenes/Bautizo.jpg" title="El bautizo"/>
-                <p>El 29 de Diciembre del 2019 fue su bautizo.</p>
-            </article>
-        </section>
-        <section id="primer_anno">
-            <article id="primer_anno_info">
-                <img src="./Imagenes/Su_primer_año.jpg" title="Su primer cumple"/>
-                <p>El 10 de Abril del 2020 cumplio su primer año.</p>
-            </article>
-        </section>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Imagenes/Maiangel 1.jpg" alt="Los Angeles" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>We had such a great time in LA!</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/Mariangel1.jpg" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3>Chicago</h3>
+              <p>Thank you, Chicago!</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/Mariangel2.jpg" alt="New York" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>   
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
    </main>
    <section>
         <article class="foto">
@@ -52,4 +65,7 @@
 </main>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>
