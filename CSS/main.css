@@ -1,48 +1,12 @@
 body {
     background: #E8DBC5;
 }
-#pagina {
-    display: grid;
-    grid-template-areas: "cabecera cabecera"
-                          "foto menu"
-                           "pie pie";
-    column-gap: 20px;
-    row-gap: 10px;
-    grid-template-rows: 90px 85% 1fr;
-    grid-template-columns: 500px 1fr;
-}
-.foto img {
-    border-color: #FFF4E9;
-    border-width: 10px;
-    border-style: solid;
-    position: relative;
-    width: 95%;
-    margin-top: 20%;
-}
 
 .carousel-inner img {
-    width: 100%;
-    height: 100%;
+    margin-left: 10%;
+    width: 80%;
   }
 
-header {
-   
-    grid-area: cabecera;
-}
-h1 {
-    color: #C3A29E;
-}
-#info {
-    grid-area: menu;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-#informacion #primer_dia img {
-    border-radius: 80px;
-    margin: 10%;
-    height: 200px;
-    width: 200px;
-}
 #informacion #primer_dia p{
     text-align: center;
     font-size: large;
@@ -51,24 +15,12 @@ h1 {
     font-size: 25px;
 
 }
-#primera_palabra #primera_palabra_info img {
-    border-radius: 80px;
-    margin: 10%;
-    height: 200px;
-    width: 200px;
-}
 #primera_palabra #primera_palabra_info p{
     text-align: center;
     font-size: large;
     margin-top: 10% ;
     margin-right: 35%;
     font-size: 25px;
-}
-#bautizo #bautizo_info img {
-    border-radius: 80px;
-    margin: 10%;
-    height: 200px;
-    width: 200px;
 }
 #bautizo #bautizo_info p{
     text-align: center;
@@ -77,12 +29,7 @@ h1 {
     margin-right: 35%;
     font-size: 25px;
 }
-#primer_anno #primer_anno_info img {
-    border-radius: 80px;
-    margin: 10%;
-    height: 200px;
-    width: 200px;
-}
+
 #primer_anno #primer_anno_info p{
     text-align: center;
     font-size: large;
@@ -90,13 +37,8 @@ h1 {
     margin-right: 35%;
     font-size: 25px;
 }
-footer {
-    background-color: #FFF4E9;
-    grid-area: pie;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 header h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align:center ;
+    color: #C3A29E;
 }
